@@ -32,15 +32,41 @@ html, body {
 }
 
 body {
-  background-color: #000;
+  background-color: #cfc9b8;
 }
 
+/*
+ * Background: a tiny inlined placeholder paints instantly, then the
+ * real photo loads on top of it. Smaller screens get smaller files.
+ */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: url(../img/background.webp) center / cover no-repeat;
+  background-color: #cfc9b8;
+  background-image:
+    url(../img/tijuana-720.webp),
+    url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoUABQAPxFws1MsJaSisBgIAYAiCWUAzNAPSutyrZjUPNWB86GKAAD40mdGouw591tkPCyJ0+EzePoJiR6Z8RTk2c3DmyDraM8Ebv5+fzjvdCoYxmCYOvlhdfAhOKsbiCWvBj4A);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: -2;
+}
+
+@media (min-width: 1000px), (min-height: 1000px) {
+  body::before {
+    background-image:
+      url(../img/tijuana-1280.webp),
+      url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoUABQAPxFws1MsJaSisBgIAYAiCWUAzNAPSutyrZjUPNWB86GKAAD40mdGouw591tkPCyJ0+EzePoJiR6Z8RTk2c3DmyDraM8Ebv5+fzjvdCoYxmCYOvlhdfAhOKsbiCWvBj4A);
+  }
+}
+
+@media (min-width: 1600px) {
+  body::before {
+    background-image:
+      url(../img/tijuana-1920.webp),
+      url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoUABQAPxFws1MsJaSisBgIAYAiCWUAzNAPSutyrZjUPNWB86GKAAD40mdGouw591tkPCyJ0+EzePoJiR6Z8RTk2c3DmyDraM8Ebv5+fzjvdCoYxmCYOvlhdfAhOKsbiCWvBj4A);
+  }
 }
 
 /* 
@@ -457,6 +483,7 @@ body::before {
 
 .hero-content {
   color: #ffffff;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1464,7 +1491,7 @@ body::before {
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.25em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -1522,7 +1549,7 @@ body::before {
 
 .hero-content .copyright {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.15em;
   margin: 0;
 }

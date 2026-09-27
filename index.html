@@ -14,7 +14,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Rane Simons - Tijuana" />
     <meta property="og:description" content="Listen to my new song Tijuana" />
-    <meta property="og:image" content="https://tijuana.ranesimons.com/assets/img/background.png" />
+    <meta property="og:image" content="https://tijuana.ranesimons.com/assets/img/tijuana-og.jpg" />
     <meta property="og:image:alt" content="Rane Simons - Tijuana Thumbnail" />
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,7 +31,12 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#cfc9b8">
+
+    <!-- Start the background download right away (matches the media queries in style.css) -->
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high" href="assets/img/tijuana-720.webp" media="(max-width: 999px) and (max-height: 999px)">
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high" href="assets/img/tijuana-1280.webp" media="(min-width: 1000px) and (max-width: 1599px), (min-height: 1000px) and (max-width: 1599px)">
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high" href="assets/img/tijuana-1920.webp" media="(min-width: 1600px)">
 
     <link rel="stylesheet" href="assets/css/style.css">
 
