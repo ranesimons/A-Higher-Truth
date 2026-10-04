@@ -32,7 +32,7 @@ html, body {
 }
 
 body {
-  background-color: #cfc9b8;
+  background-color: #c1b197;
 }
 
 /*
@@ -43,11 +43,11 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-color: #cfc9b8;
+  background-color: #c1b197;
   background-image:
-    url(../img/tijuana-720.webp),
-    url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoUABQAPxFws1MsJaSisBgIAYAiCWUAzNAPSutyrZjUPNWB86GKAAD40mdGouw591tkPCyJ0+EzePoJiR6Z8RTk2c3DmyDraM8Ebv5+fzjvdCoYxmCYOvlhdfAhOKsbiCWvBj4A);
-  background-position: center;
+    url(../img/ahighertruth-720.webp),
+    url(data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBQCdASoUAB4APuVepk2pJSOiN/VYASAciUATpmNn7s/4HuPElmlaLYxYAEMIAXvOUFODgAD+9gviMFnvNs2TB1NrlKxoa1BvGA5ZcDeQtwizonouUMXsELotAotfuo81aaLcQKIlOyKi9su2VjRSuIGO3EgXb2A5n0qH3YOOWP9Xa3ip3mMizAOlFuyIl2XYGxI3gmVEDLJFvmtGlhogAAA=);
+  background-position: center 25%; /* keep the face in frame on wide screens */
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -2;
@@ -56,16 +56,16 @@ body::before {
 @media (min-width: 1000px), (min-height: 1000px) {
   body::before {
     background-image:
-      url(../img/tijuana-1280.webp),
-      url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoUABQAPxFws1MsJaSisBgIAYAiCWUAzNAPSutyrZjUPNWB86GKAAD40mdGouw591tkPCyJ0+EzePoJiR6Z8RTk2c3DmyDraM8Ebv5+fzjvdCoYxmCYOvlhdfAhOKsbiCWvBj4A);
+      url(../img/ahighertruth-1280.webp),
+      url(data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBQCdASoUAB4APuVepk2pJSOiN/VYASAciUATpmNn7s/4HuPElmlaLYxYAEMIAXvOUFODgAD+9gviMFnvNs2TB1NrlKxoa1BvGA5ZcDeQtwizonouUMXsELotAotfuo81aaLcQKIlOyKi9su2VjRSuIGO3EgXb2A5n0qH3YOOWP9Xa3ip3mMizAOlFuyIl2XYGxI3gmVEDLJFvmtGlhogAAA=);
   }
 }
 
 @media (min-width: 1600px) {
   body::before {
     background-image:
-      url(../img/tijuana-1920.webp),
-      url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoUABQAPxFws1MsJaSisBgIAYAiCWUAzNAPSutyrZjUPNWB86GKAAD40mdGouw591tkPCyJ0+EzePoJiR6Z8RTk2c3DmyDraM8Ebv5+fzjvdCoYxmCYOvlhdfAhOKsbiCWvBj4A);
+      url(../img/ahighertruth-1920.webp),
+      url(data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBQCdASoUAB4APuVepk2pJSOiN/VYASAciUATpmNn7s/4HuPElmlaLYxYAEMIAXvOUFODgAD+9gviMFnvNs2TB1NrlKxoa1BvGA5ZcDeQtwizonouUMXsELotAotfuo81aaLcQKIlOyKi9su2VjRSuIGO3EgXb2A5n0qH3YOOWP9Xa3ip3mMizAOlFuyIl2XYGxI3gmVEDLJFvmtGlhogAAA=);
   }
 }
 
