@@ -1474,8 +1474,19 @@ body::before {
 }
 
 /* Artist header */
+/* Dark panel behind the name so it reads over both the bright sky and the photo */
 .artist-header {
-  margin-bottom: 28px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 1.1rem 1rem 1rem;
+  background: rgba(0, 0, 0, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  text-shadow: none;
 }
 
 .hero-content h1 {
@@ -1487,11 +1498,11 @@ body::before {
   text-transform: uppercase;
 }
 
-.album-subtitle {
-  font-size: 13px;
-  font-weight: 600;
+.hero-content .album-subtitle {
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.25em;
-  color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
